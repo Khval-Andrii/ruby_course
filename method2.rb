@@ -4,4 +4,3 @@ def rectangle_length(a, b)
     end
     p = 2 * (a + b)
 end
-puts(rectangle_length(2, -5))
