@@ -7,3 +7,7 @@ admin = check_password("u1", "p1")
 puts admin.call("u1", "p1")
 
 puts admin.call("u1")
+
+puts admin.call("u1", "p1")
+
+puts admin.call("u1")
