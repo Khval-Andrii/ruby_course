@@ -9,7 +9,7 @@ class Site
     def go_to(path)
       new_url = "#{HOME_URL}/#{path}"
       @current_url = new_url unless new_url == @current_url
-  end
+    end
     
     def to_s
       "*----------*\n home: #{HOME_URL}\n current url: #{@current_url}\n*----------*"
