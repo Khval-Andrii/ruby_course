@@ -3,12 +3,15 @@ def third_order(dig)
     begin
       count += 1
       num = rand(dig)
-      "What is result #{num} * #{num} * #{num}?"
-      answer = gets.strip
-      answer == num * num * num
-    rescue
-      retry if count <= 3
+      puts "What is result #{num} * #{num} * #{num}?"
+      answer = gets.strip.to_i
+      raise StandardError unless answer == num * num * num
+    rescue StandardError
+      retry if count < 3
+      puts "Try next time"
     else
-      Good job
+      puts "Good job"
     end
-  end
+end
+
+third_order(10)
