@@ -10,7 +10,7 @@ class PhoneFormatException < StandardError
   
   module Validation
     def phone_valid?(phone)
-      phone.match?(/\A\+38\d{10, 10}\Z/)
+      phone.match?(/\+38[\d]{10}/)
     end
   end
   
@@ -29,4 +29,4 @@ class PhoneFormatException < StandardError
   end
   
   user = User.new("Peter")
-  puts user.phone = '80969641337'
+  puts user.phone = '+80969641337'
