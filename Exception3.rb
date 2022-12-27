@@ -2,7 +2,7 @@ def third_order(dig)
     count = 0
     begin
       count += 1
-      num = rand(dig)
+      num = rand(1..dig)
       puts "What is result #{num} * #{num} * #{num}?"
       answer = gets.strip.to_i
       raise StandardError unless answer == num * num * num
@@ -14,4 +14,4 @@ def third_order(dig)
     end
 end
 
-third_order(10)
+third_order(1)

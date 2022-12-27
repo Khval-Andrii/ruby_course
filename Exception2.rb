@@ -29,4 +29,4 @@ class PhoneFormatException < StandardError
   end
   
   user = User.new("Peter")
-  puts user.phone = '+80969641337'
+  puts user.phone = '80969641337'
